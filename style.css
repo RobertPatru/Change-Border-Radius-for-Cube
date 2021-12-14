@@ -1,0 +1,55 @@
+:root {
+    --cube-color: linear-gradient(45deg, #3023AE 0%, #f09 100%);
+    --cube-container-border: rgba(255,255,255,0.4);
+    --body-color: #002;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: var(--body-color);
+}
+
+.container {
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 5px red solid; */
+}
+
+.cube-container {
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    border: 3px dashed var(--cube-container-border);
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    background: var(--cube-color);
+}
+
+.container-inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-input-values {
+    background: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
