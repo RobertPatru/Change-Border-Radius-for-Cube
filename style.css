@@ -21,6 +21,30 @@ body {
     background: var(--body-color);
 }
 
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number] {
+    outline: none;
+    border: none;
+    text-align: end;
+    width: 45px;
+
+    background: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
 .container {
     height: 550px;
     display: flex;
@@ -47,7 +71,7 @@ body {
     flex-direction: column;
 }
 
-.show-input-values {
+.values-container {
     background: white;
     text-align: center;
     font-size: 28px;

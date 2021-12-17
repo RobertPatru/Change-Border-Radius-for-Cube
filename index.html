@@ -14,13 +14,18 @@
         </div>
 
         <div class="container-inputs">
-            <input type="range" class="top-left" min="0" max="100" value="0" oninput="changeBorderRadius">
-            <input type="range" class="top-right" min="0" max="100" value="0">
-            <input type="range" class="bottom-left" min="0" max="100" value="0">
-            <input type="range" class="bottom-right" min="0" max="100" value="0">
+            <input type="range" class="corner top-left" min="0" max="100" value="0" oninput="changeBorderRadius">
+            <input type="range" class="corner top-right" min="0" max="100" value="0" oninput="changeBorderRadius">
+            <input type="range" class="corner bottom-left" min="0" max="100" value="0" oninput="changeBorderRadius">
+            <input type="range" class="corner bottom-right" min="0" max="100" value="0" oninput="changeBorderRadius">
         </div>
 
-        <span class="show-input-values">100% / 100% / 100% / 100%</span>
+        <div class="values-container">
+            <input type="number" class="input-value spanTopLeft" value="0" maxlength="3" min="0" max="100" oninput="changeValue"><span class="percentage">%</span>
+            <input type="number" class="input-value spanTopRight" value="0" maxlength="3" min="0" max="100" oninput="changeValue"><span class="percentage">%</span>
+            <input type="number" class="input-value spanBottomLeft" value="0" maxlength="3" min="0" max="100" oninput="changeValue"><span class="percentage">%</span>
+            <input type="number" class="input-value spanBottomRight" value="0" maxlength="3" min="0" max="100" oninput="changeValue"><span class="percentage">%</span>
+        </div>
     </div>
     
     <script src="/app.js"></script>
